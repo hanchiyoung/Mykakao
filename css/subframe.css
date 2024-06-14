@@ -1,0 +1,52 @@
+#wrap {
+  overflow: hidden;
+  width: 500px;
+  height: 810px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+#wrap > header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#wrap > header > a > img {
+  display: block;
+  position: absolute;
+  transform: rotate(180deg);
+  width: 32px;
+  left: 25px;
+  top: 46px;
+}
+#wrap > header > a > h1 {
+  display: block;
+  position: absolute;
+  left: 60px;
+  top: 45px;
+}
+#wrap > section.notice::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 10px;
+}
+#wrap > section {
+  display: flex;
+}
+#wrap > section > nav {
+  width: 130px;
+  height: 700px;
+  border-right: 1px solid #e0e0e0;
+  padding-top: 10px;
+  background-color: #F8F8F8;
+}
+#wrap > section > nav > ul > li {
+  width: 105px;
+  height: 60px;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 60px;
+}
+#wrap > section > nav > ul > li.on {
+  background-color: #ececed;
+}/*# sourceMappingURL=subframe.css.map */

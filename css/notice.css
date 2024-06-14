@@ -1,0 +1,71 @@
+#wrap > header > a > h2 {
+  position: absolute;
+  left: 210px;
+  top: 55px;
+  font-size: 14px;
+}
+#wrap > section {
+  width: 100%;
+  height: 710px;
+  background-color: #ececed;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#wrap > section::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+}
+#wrap > section::-webkit-scrollbar-thumb {
+  background-color: #ececed;
+  border-radius: 10px;
+}
+#wrap > section::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+#wrap > section > div {
+  display: inline-block;
+  width: 92%;
+  height: 885px;
+  margin: 20px auto;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+#wrap > section > div > h2 {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  height: 80px;
+  line-height: 95px;
+  font-size: 26px;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+}
+#wrap > section > div div {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: start;
+}
+#wrap > section > div div > article {
+  position: relative;
+  width: calc(100% - 60px);
+  margin: 0 30px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#wrap > section > div div > article > p {
+  margin-left: 10px;
+  font-size: 15px;
+}
+#wrap > section > div div > article > p > span {
+  position: absolute;
+  right: 45px;
+  top: 0;
+  color: gray;
+}
+#wrap > section > div div > article > img {
+  position: absolute;
+  width: 24px;
+  right: 10px;
+  top: 18px;
+}/*# sourceMappingURL=notice.css.map */

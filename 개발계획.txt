@@ -1,0 +1,39 @@
+1. 개발범위(페이지) 선정 및 파일명
+
+friends > index.html
+
+chatlist 
+  - talk1
+  - talk2
+  - talk3
+  - talk4
+more 
+  - notice
+  - imoticon
+  - update
+
+width : 500px
+height :810px
+advertisement banner 찾기
+
+2024.06.03 프로젝트 기한 안내 [~14일]
+2024.06.04 frame update
+2024.06.05 친구 - 아이콘 추가
+2024.06.06 현충일 휴무
+2024.06.07 친구 / 채팅 / 더보기 추가
+2024.06.08 더보기 - 정보 / 아이콘 추가
+2024.06.09 일요일 휴무
+2024.06.10 sub frame update
+2024.06.11 공지사항 추가
+
+2024.06.12 채팅방 추가
+2024.06.13 채팅상대 추가
+
+scrollbar > webkit
+screen 부분만 변경 나머지는 동일
+
+2. 각 페이지별 스케치 (시안) -> 구성요소 확정
+
+3. 필요한 리소스 수집 -> 이미지, 영상, 글
+
+4. 코딩작업

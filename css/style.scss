@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+
+$mobile : "screen and (max-width:800px)";
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap{
+    display: flex;
+    flex-flow: row wrap;
+    width: 640px;
+    height: 960px;
+    margin: 30px auto ;
+    border: 1px solid #000;
+    >.gnb{
+        position: relative;
+        width: 100px;
+        height: 810px;
+        background-color: rgb(219, 216, 216);
+        >ul{
+            >li{
+                @include flexCenter();
+                width: 100px;
+                height: 100px;
+            }//li
+        }//ul
+        
+        >.up{
+            position: absolute;
+            left: 0;
+            top: 30px;
+            >li{
+                >a{
+                    >img{
+                        display: block;
+                        opacity: 0.3;
+                        
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                    }//img
+                }//a
+                
+                &.on>a>img{
+                    opacity: 1;
+                }
+            }//li
+        }//.up
+        
+        >.down{
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            li{
+                position: relative;
+
+                &:before{
+                    display: none;
+                    position: absolute;
+                    left: 15px;
+                    top: 15px;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: gray;
+                    opacity: 0.2;
+                    content: '';
+
+                }
+
+                &:hover:before{
+                    display: block;
+                }
+
+
+                >a{
+                    >img{
+                    }//img
+                }//a
+            }//li
+        }//.down
+                
+    }//.gnb
+    >.screen{
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 540px;
+        height: 810px;
+    }//.screen
+    >.banner{
+        width: 960px;
+        height: 150px;
+        background-color: rgb(243, 240, 240)
+    }//banner
+}//wrap

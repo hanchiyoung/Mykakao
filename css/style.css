@@ -1,0 +1,71 @@
+@import url(./reset.css);
+#wrap {
+  display: flex;
+  flex-flow: row wrap;
+  width: 640px;
+  height: 960px;
+  margin: 30px auto;
+  border: 1px solid #000;
+}
+#wrap > .gnb {
+  position: relative;
+  width: 100px;
+  height: 810px;
+  background-color: rgb(219, 216, 216);
+}
+#wrap > .gnb > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+#wrap > .gnb > .up {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+#wrap > .gnb > .up > li > a > img {
+  display: block;
+  opacity: 0.3;
+}
+#wrap > .gnb > .up > li > a > img:hover {
+  opacity: 0.6;
+}
+#wrap > .gnb > .up > li.on > a > img {
+  opacity: 1;
+}
+#wrap > .gnb > .down {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+#wrap > .gnb > .down li {
+  position: relative;
+}
+#wrap > .gnb > .down li:before {
+  display: none;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.2;
+  content: "";
+}
+#wrap > .gnb > .down li:hover:before {
+  display: block;
+}
+#wrap > .screen {
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 540px;
+  height: 810px;
+}
+#wrap > .banner {
+  width: 960px;
+  height: 150px;
+  background-color: rgb(243, 240, 240);
+}/*# sourceMappingURL=style.css.map */
